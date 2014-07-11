@@ -1,0 +1,1385 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-10 18:26:11 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:14:33 -0400
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__3382280820813364248__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Missy/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Missy/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Missy/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:15:11 -0400
+Processing by MapsController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+TypeError (superclass must be a Class (Module given)):
+  app/models/map.rb:1:in `<top (required)>'
+  app/controllers/maps_controller.rb:7:in `index'
+
+
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:15:47 -0400
+Processing by MapsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `all' for Map:Class):
+  app/controllers/maps_controller.rb:7:in `index'
+
+
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:16:40 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @maps.each do |map| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', map %></td>
+    16:         <td><%= link_to 'Edit', edit_map_path(map) %></td>
+  app/views/maps/index.html.erb:13:in `_app_views_maps_index_html_erb___3628944557049285542_2184836480'
+
+
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/Missy/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 691ms (Views: 690.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:17:06 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:19:49 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:21:39 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:22:52 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:23:06 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:07 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:23 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:23:37 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:14 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:25 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:24:50 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:25:40 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:00 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:16 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:26:25 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 20:59:57 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:02:20 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:04:29 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:13:28 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:14:59 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:13 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:23 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:15:29 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:30 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:15:39 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:16:38 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:06 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:26 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:36 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:21:57 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:37:59 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:38:21 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:36 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:40:51 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:41:21 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:43 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:44:48 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:45:17 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:47:32 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:48:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:48:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:48:18 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:48:18 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:50:27 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:51:18 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:55:11 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 21:57:01 -0400
+
+
+Started GET "/maps" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+Processing by MapsController#index as HTML
+  Rendered maps/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-07-10 22:02:11 -0400
